@@ -32,7 +32,7 @@ def run_rmbg(
 ) -> np.array:
 
     if "U2NET_HOME" not in os.environ:
-        os.environ["U2NET_HOME"] = os.path.join(models_path, "../../ic-models")
+        os.environ["U2NET_HOME"] = "/home/ubuntu/ic-models"
 
     image = Image.fromarray(np_image.astype(np.uint8)).convert("RGB")
 
