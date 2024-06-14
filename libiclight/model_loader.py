@@ -9,7 +9,7 @@ FBC_PATH: str = None
 
 def detect_models(models_path: str):
     global FC_NAME, FBC_NAME, FC_PATH, FBC_PATH
-    folder = os.path.join(models_path, "ic-light")
+    folder = "/home/ubuntu/ic-models"
 
     if not os.path.exists(folder):
         print('\n[Warning] "ic-light" folder is not detected in the models folder!')
